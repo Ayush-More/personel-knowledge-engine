@@ -1,0 +1,14 @@
+services:
+  api:
+    build: .
+    container_name: personal-knowledge-engine-api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - qdrant_data:/app/data/qdrant
+    restart: unless-stopped
+
+volumes:
+  qdrant_data:

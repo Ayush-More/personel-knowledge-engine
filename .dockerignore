@@ -1,0 +1,29 @@
+
+# Secrets
+.env
+.env.*
+
+# Local Python environments
+.venv/
+venv/
+
+# Version control
+.git/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Test and coverage artifacts
+.coverage
+htmlcov/
+
+# Persistent vector database
+data/qdrant/
+
+# OS files
+.DS_Store
+Thumbs.db
